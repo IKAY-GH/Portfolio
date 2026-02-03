@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +32,9 @@
           </div>
           <button class="language"></button>
           <input type="checkbox" class="mode button" />
-          <button class="burger menu" class="bar"><span></span></button>
+          <button class="burger menu for mobile" class="bar">
+            <span></span>
+          </button>
         </nav>
       </div>
     </header>
@@ -40,15 +42,15 @@
       <section id="home">
         <div class="grid">
           <div class="home__item left">
-            <h1>Bonjour je suis CAYUELA Annick de TOULOUSE</h1>
+            <h1 class="title">Bonjour je suis CAYUELA Annick de TOULOUSE</h1>
             <p>Bienvenue sur mon portfolio de développeuse web</p>
           </div>
           <div class="home__item right">
             <div class="home photo">
               <img
+                height="500"
                 src="./public/images/profil_photo.jpg"
                 alt="CAYUELA Annick développeuse web"
-                height="200"
               />
             </div>
           </div>
@@ -61,7 +63,7 @@
               <img
                 src="./public/images/squirrel.jpg"
                 alt="Image d'écureuil"
-                height="300"
+                height="250"
               />
             </div>
           </div>
@@ -69,7 +71,8 @@
             <h2>A propos</h2>
             <h3>Qui suis-je?</h3>
             <p>
-              Junior en développement web, j'ai effectué 15 belles années dans le domaine de l'animation avant de me reconvertir. 
+              Junior en développement web, j'ai effectué 15 belles années dans
+              le domaine de l'animation avant de me reconvertir.
             </p>
             <h3>Qu'est ce que je fais quand je ne code pas?</h3>
             <p>
@@ -85,12 +88,40 @@
         <div class="grid">
           <h2>Mes Compétences techniques</h2>
           <ul class="tachnical__skills list-unstyled">
-            <li><img src="" alt="" />Javascript</li>
-            <li><img src="" alt="" />React</li>
-            <li><img src="" alt="" />Node.js</li>
-            <li><img src="" alt="" />MySQL</li>
-            <li><img src="" alt="" />Typescript</li>
-            <li><img src="" alt="" />API REST</li>
+            <li>
+              <img
+                src="./public/images/Tecno/logo_JS.png"
+                alt="Logo javascript"
+              />Javascript
+            </li>
+            <li>
+              <img
+                src="./public/images/Tecno/logo_React.png"
+                alt="Logo React"
+              />React
+            </li>
+            <li>
+              <img
+                src="./public/images/Tecno/logo_Node.png"
+                alt="Logo Node"
+              />Node.js
+            </li>
+            <li>
+              <img
+                src="./public/images/Tecno/logo_MySQL.png"
+                alt="Logo MySQL"
+              />MySQL
+            </li>
+            <li>
+              <img
+                src="./public/images/Tecno/logo_Typescript.png"
+                alt="Logo Typescript"
+              />Typescript
+            </li>
+            <li>
+              <img src="./public/images/Tecno/logo_Api.png" alt="Logo API" />API
+              REST
+            </li>
           </ul>
         </div>
       </section>
@@ -110,150 +141,301 @@
       <section id="projects" class="projects">
         <div class="grid">
           <h2>Mes Projets</h2>
-            <div class="card">
-              <img src="./public/images/Projects/wild-langue.png" alt="Logo Projet Wild Eat" class="card__image">
-              <h3>Wild Eat</h3>
-              <p>Un Wilder qui travail est un wilder qui a faim ! <br> En quête de nourriture afin de retrouver toute sa lucidité durant les cours, le wilder trouvera à proximité de son centre de formation pléthore possibilitées pour se restaurer. Mais comment faire pour choisir? Ce site filtre et répertorit toutes les bonnes petites adresses dénichées par les wilders eux mêmes qui sauront satisfaire les estomacs les plus exigeants.</p>
-            </div>
-            <div class="card">
-              <img src="./public/images/Projects/logo_Minois.png" alt="Logo Projet Minois" class="card__image">
-              <h3>Minois</h3>
-              <p>Si vous êtes sur ce site, c'est que vous aimez l'art, et plus particulièrement le portrait. Tant mieux pour nous ! Grâce aux magnifiques collections muséales que nous avons sélectionnées, découvrez ou redécouvrez des portraits réalisés par de nombreux artistes à travers le temps. Une multitude de techniques, comme la photographie, l'aquarelle, la peinture… sont utilisées et témoignent de la richesse des expressions autour du même sujet : le portrait. Reflet de l'âme, le portrait est le témoin du temps et de l'histoire, figé sur un fragment de vie qui évoque, suggère et parfois bouleverse. Le portrait, aussi immobile soit-il, reste vivant grâce aux émotions qui émergent. Il peut parfois être le gardien d'un héritage. Un défi pour les artistes qui capturent les expressions du visage, s'efforçant de saisir l'authenticité de l'instant. Amis curieux, ce site est fait pour vous et pour votre plus grand plaisir.
-</p>
-            </div>
-            <div class="card">
-              <img src="./public/images/Projects/perroquet.ico" alt="" class="card__image">
-              <h3>CAP</h3>
-              <p>CAP! est une plateforme innovante dédiée aux activités pour enfants et adolescents. Sa mission est de faciliter la recherche et l'organisation d'activités ludiques, éducatives et créatives pour les animateurs, éducateurs, parents et tous ceux qui travaillent avec les jeunes publics.</p>
-            </div>
-            <div class="card">
-              <img src="" alt="" class="card__image">
-              <h3>Carambar</h3>
-              <p></p>
-            </div>
-            <div class="card">
-              <img src="" alt="" class="card__image">
-              <h3>Street Art Hunter</h3>
-              <p></p>
-            </div>
+          <div class="left-card">
+            <img
+              src="./public/images/Projects/wild-langue.png"
+              alt="Wild Eat icon Project"
+              class="card__image"
+            />
+            <h3 class="card__title">Wild Eat</h3>
+            <p class="card__description">
+              Un Wilder qui travail est un wilder qui a faim ! <br />
+              En quête de nourriture afin de retrouver toute sa lucidité durant
+              les cours, le wilder trouvera à proximité de son centre de
+              formation pléthore possibilitées pour se restaurer. Mais comment
+              faire pour choisir? Ce site filtre et répertorit toutes les bonnes
+              petites adresses dénichées par les wilders eux mêmes qui sauront
+              satisfaire les estomacs les plus exigeants.
+            </p>
+            <a href="#" target="_blank">
+              <svg
+                width="30"
+                class="youtube icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+            <img
+              src="./public/images/design/Branch (1).png"
+              alt="branch image"
+            />
+          </div>
+          <div class="right-card">
+            <img
+              src="./public/images/Projects/logo_Minois.png"
+              alt="Minois icon project"
+              class="card__image"
+            />
+            <h3 class="card__title">Minois</h3>
+            <p class="card__description">
+              Si vous êtes sur ce site, c'est que vous aimez l'art, et plus
+              particulièrement le portrait. Tant mieux pour nous ! Grâce aux
+              magnifiques collections muséales que nous avons sélectionnées,
+              découvrez ou redécouvrez des portraits réalisés par de nombreux
+              artistes à travers le temps. Une multitude de techniques, comme la
+              photographie, l'aquarelle, la peinture… sont utilisées et
+              témoignent de la richesse des expressions autour du même sujet :
+              le portrait. Reflet de l'âme, le portrait est le témoin du temps
+              et de l'histoire, figé sur un fragment de vie qui évoque, suggère
+              et parfois bouleverse. Le portrait, aussi immobile soit-il, reste
+              vivant grâce aux émotions qui émergent. Il peut parfois être le
+              gardien d'un héritage. Un défi pour les artistes qui capturent les
+              expressions du visage, s'efforçant de saisir l'authenticité de
+              l'instant. Amis curieux, ce site est fait pour vous et pour votre
+              plus grand plaisir.
+            </p>
+            <a href="#" target="_blank">
+              <svg
+                width="30"
+                class="youtube icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+            <img
+              src="./public/images/design/Branch (7).png"
+              alt="branch image"
+            />
+          </div>
+          <div class="left-card">
+            <img
+              src="./public/images/Projects/perroquet.ico"
+              alt="Bird CAP icon project"
+              class="card__image"
+            />
+            <h3 class="card__title">CAP</h3>
+            <p class="card__description">
+              CAP! est une plateforme innovante dédiée aux activités pour
+              enfants et adolescents. Sa mission est de faciliter la recherche
+              et l'organisation d'activités ludiques, éducatives et créatives
+              pour les animateurs, éducateurs, parents et tous ceux qui
+              travaillent avec les jeunes publics.
+            </p>
+            <a href="#" target="_blank">
+              <svg
+                width="30"
+                class="youtube icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+            <img
+              src="./public/images/design/Branch (2).png"
+              alt="branch image"
+            />
+          </div>
+          <div class="right-card">
+            <img
+              src="./public/images/Projects/Carambar3.png"
+              alt="Carambar icon project"
+              class="card__image"
+            />
+            <h3 class="card__title">Carambar</h3>
+            <p class="card__description">
+              Une Landing page Carambar qui génère une légendaire blague
+              Carambar et sa réponse.
+            </p>
+            <a href="#" target="_blank">
+              <svg
+                width="30"
+                class="youtube icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+            <img
+              src="./public/images/design/Branch (8).png"
+              alt="branch image"
+            />
+          </div>
+          <div class="left-card">
+            <img
+              src="./public/images/Projects/SAH.ico"
+              alt="Street Art Hunter icon project"
+              class="card__image"
+            />
+            <h3 class="card__title">Street Art Hunter</h3>
+            <p class="card__description">
+              Projet FullStack réalisé pour la présentation au titre RNCP
+              Développeur Web et Web mobile. Street Art Hunter est un projet de
+              chasse d'oeuvres de Street Art dans la ville de Toulouse. Il donne
+              accés à un compte privilégié via lequel chaque participant prend
+              en photo les oeuvres et participe à un classement à point gérér
+              par un administrateur.
+            </p>
+            <a href="#" target="_blank">
+              <svg
+                width="30"
+                class="youtube icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+            <img
+              src="./public/images/design/Branch (5).png"
+              alt="branch image"
+            />
+          </div>
         </div>
       </section>
       <section id="contact" class="contact">
-          <h2>Contact</h2>
-          <div class="grid">
-            <div class="mail__contact">
-              <svg 
-                width="30"
-                class="mail__icon"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M61.4 64C27.5 64 0 91.5 0 125.4 0 126.3 0 127.1 .1 128L0 128 0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256-.1 0c0-.9 .1-1.7 .1-2.6 0-33.9-27.5-61.4-61.4-61.4L61.4 64zM464 192.3L464 384c0 8.8-7.2 16-16 16L64 400c-8.8 0-16-7.2-16-16l0-191.7 154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3zM48 125.4C48 118 54 112 61.4 112l389.2 0c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7z"/></svg>
-              <p>
-                Mail:
-                <a href="mailto:annickcayuela.ac@gmail.com">
-                  annickcayuela.ac@gmail.com
-                </a>
-              </p>
-            </div>
-
-            <div class="linkedin_contact">
-                <svg
-                width="30"
-                class="linkedin icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-                >
-                <path
-                  d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
-                />
-                </svg>
-                <p>
-                Linkedin:
-                <a
-                  href="https://www.linkedin.com/in/annick-cayuela-ikay/"
-                  target="_blank"
-                >
-                  Annick CAYUELA
-                </a>
-                </p>
-            </div>
-            <div class="github__contact">
-              <svg
-                width="30"
-                class="github icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                />
-              </svg>
-              <p>
-                  Github:
-                  <a href="https://github.com/IKAY-GH" target="_blank"> IKAY-GH </a></div>
-        
-              </p>
-            </div>
-
-             
-              
+        <h2>Contact</h2>
+        <div class="grid">
+          <div class="mail__contact">
+            <svg
+              width="30"
+              class="mail__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M61.4 64C27.5 64 0 91.5 0 125.4 0 126.3 0 127.1 .1 128L0 128 0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256-.1 0c0-.9 .1-1.7 .1-2.6 0-33.9-27.5-61.4-61.4-61.4L61.4 64zM464 192.3L464 384c0 8.8-7.2 16-16 16L64 400c-8.8 0-16-7.2-16-16l0-191.7 154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3zM48 125.4C48 118 54 112 61.4 112l389.2 0c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7z"
+              />
+            </svg>
+            <p>
+              Mail:
+              <a href="mailto:annickcayuela.ac@gmail.com">
+                annickcayuela.ac@gmail.com
+              </a>
+            </p>
           </div>
-        </section>
+
+          <div class="linkedin_contact">
+            <svg
+              width="30"
+              class="linkedin icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+              />
+            </svg>
+            <p>
+              Linkedin:
+              <a
+                href="https://www.linkedin.com/in/annick-cayuela-ikay/"
+                target="_blank"
+              >
+                Annick CAYUELA
+              </a>
+            </p>
+          </div>
+          <div class="github__contact">
+            <svg
+              width="30"
+              class="github icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              />
+            </svg>
+            <p>
+              Github:
+              <a href="https://github.com/IKAY-GH" target="_blank"> IKAY-GH </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <footer>
-      <p>© 2026</p>
-      <p>
-        <a href="https://github.com/IKAY-GH/Portfolio" target="_blank"
-          >Code du site</a
-        >
-      </p>
-      <div class="networks links">
-        <ul class="social list-unstyled">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/annick-cayuela-ikay"
-              target="_blank"
-            >
-              <svg
-                width="30"
-                class="linkedin icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
+      <div class="container">
+        <div class="grid">
+          <div class="grid__item">
+            <p>© 2026 All Rights Reserved</p>
+          </div>
+          <div class="grid__item">
+            <p>
+              <a href="https://github.com/IKAY-GH/Portfolio" target="_blank"
+                >Code du site</a
               >
-                <path
-                  d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/IKAY-GH" target="_blank"
-              ><svg
-                width="30"
-                class="github icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://linktr.ee/annickcayuela" target="_blank">
-              <svg
-                width="30"
-                class="linktree icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  d="M32 173.4l125.8 0-89.4-85.4 49.5-51 85.2 87.8 0-124.8 73.9 0 0 124.8 85.2-87.6 49.4 50.8-89.4 85.2 125.7 0 0 70.5-126.4 0 90 87.6-49.3 49.8-122.2-123-122.2 123-49.5-49.6 90-87.6-126.4 0 0-70.5zM202.9 344.8l73.9 0 0 167.2-73.9 0 0-167.2z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
+            </p>
+          </div>
+          <div class="grid__item">
+            <div class="networks links">
+              <ul class="social list-unstyled">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/annick-cayuela-ikay"
+                    target="_blank"
+                  >
+                    <svg
+                      width="30"
+                      class="linkedin icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/IKAY-GH" target="_blank"
+                    ><svg
+                      width="30"
+                      class="github icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linktr.ee/annickcayuela" target="_blank">
+                    <svg
+                      width="30"
+                      class="linktree icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M32 173.4l125.8 0-89.4-85.4 49.5-51 85.2 87.8 0-124.8 73.9 0 0 124.8 85.2-87.6 49.4 50.8-89.4 85.2 125.7 0 0 70.5-126.4 0 90 87.6-49.3 49.8-122.2-123-122.2 123-49.5-49.6 90-87.6-126.4 0 0-70.5zM202.9 344.8l73.9 0 0 167.2-73.9 0 0-167.2z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
